@@ -1,0 +1,280 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+input {
+    outline: none;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #183D4D;
+    background-color: black;
+}
+nav div {
+    width: 30px;
+    height: 30px;
+}
+nav div img {
+    width: 30px;
+    height: 30px;
+}
+nav .nav-logo {
+    flex: 1;
+    height: 28.792px;
+    width: 198.198px;
+    margin-left: 12px;
+    margin-right: 100px;
+}
+nav .nav-logo img {
+    height: 28.8px;
+    width: 190.198px;
+}
+nav ul {
+    display: none;
+}
+.nav-right {
+    display: flex;
+    justify-self: self-end;
+    justify-content: start;
+    align-items: center;
+    width: 144px;
+    height: 32px;
+}
+.nav-right .github-img, .nav-right .user {
+    display: none;
+}
+.nav-search {
+    position: relative;
+    right: 16px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.nav-right .nav-search input{
+    margin-left: 20px;
+    padding-left: 32px;
+    border-radius: 4px;
+    border: none;
+    width: 144px;
+    height: 32px;
+    background-color: #3D3D3D;
+    font-family: 'Arial';
+    font-size: 14.4px;
+    color: #B1B1B1;
+}
+.nav-search::before {
+    content: "";
+    position: absolute;
+    left: 24px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/search.png) no-repeat;
+    background-size: 18px auto;
+}
+.nav-search .ctrl {
+    position: absolute;
+    left: 86px;
+    padding: 0px 4.8px;
+    border: 1px solid #BEC3C9;
+    border-bottom: 2px solid #BEC3C9;
+    border-radius: 3px;
+    height: 22px;
+    width: 39.74px;
+    line-height: 20px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 12.8px;
+    background-color: #000000;
+    color: #cdd0d4;
+}
+.nav-search .k {
+    position: absolute;
+    left: 130px;
+    padding: 0px 4.8px;
+    border: 1px solid #BEC3C9;
+    border-bottom: 2px solid #BEC3C9;
+    border-radius: 3px;
+    width: 18.625px;
+    height: 22px;
+    line-height: 20px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 12.8px;
+    background-color: #000000;
+    color: #B9BEC3;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 691px;
+    padding: 2rem;
+    background: url(https://lf3-static.bytednsdoc.com/obj/eden-cn/aphqeh7uhohpquloj/modern-js/banner-mobile-bg.png) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden;
+}
+.head-logo {
+    margin-top: 60px;
+    margin-bottom: 21px;
+    width: 70vw;
+}
+.head-logo img {
+    width: 70vw;
+}
+header h1 {
+    font-family: 'Noto Sans SC';
+    font-size: 8vw;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.head-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 65%;
+}
+.head-buttons a:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    border-radius: 24px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, "Segoe UI";
+    font-size: 16px;
+    color: #030303;
+    background: linear-gradient(274.85deg,#4ecaff 3%,#64cfde 97.17%);
+    opacity: .8;
+}
+.head-buttons a:nth-child(1):hover {
+    background: #93EFFF;
+}
+.head-buttons a:nth-child(2), .head-buttons a:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 49px;
+    margin-top: 42px;
+    border: 1px solid #4ecaff;
+    border-radius: 29px;
+    color: #00B3FF;
+    transition: .3s;
+    cursor: pointer;
+}
+.head-buttons a:nth-child(2):hover, .head-buttons a:nth-child(3):hover {
+    color: #93EFFF;
+    border: 1px solid #93EFFF;
+}
+.mid-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 58px;
+    border-top: 1px solid #183D4D;
+    border-bottom: 1px solid #183D4D;
+    background-color: #000000;
+    transition-property: transform;
+    overflow: hidden;
+}
+.mid-nav a {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    height: 56px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 21.5px 0;
+    background-color: #000000;
+}
+main .main-header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(https://lf3-static.bytednsdoc.com/obj/eden-cn/aphqeh7uhohpquloj/modern-js/text-bg.png);
+    background-repeat: no-repeat;
+    background-size: 51.6vw 4.51vw;
+}
+.main-header h2 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 25px;
+    font-size: 4.96vw;
+    padding-top: 13.5px;
+}
+.main-header .rotate-img {
+    align-items: center;
+    color: #000;
+    display: flex;
+    height: 93px;
+    justify-content: center;
+    position: relative;
+    width: 90.7px;
+}
+.rotate-img {
+    display: none;
+}
+.rotate-img img {
+    display: none;
+}
+.main-func {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 25px;
+    height: 738px;
+}
+.main-func a {
+    background: hsla(0,0%,100%,.1);
+    border: 1px solid hsla(0,0%,100%,.2);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 1 1 48%;
+    height: 70px;
+    margin-bottom: 12px;
+    width: 100%;
+    padding: 0 31px;
+    transition: .3s;
+}
+.main-func a:hover {
+    background: #102833;
+    cursor: pointer;
+}
+.main-func a img {
+    margin-right: 20px;
+    width: 15.68px;
+    height: 15.68px;
+}
+
